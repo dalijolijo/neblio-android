@@ -26,7 +26,6 @@ import io.nebl.core.coins.DogecoinMain;
 import io.nebl.core.coins.LitecoinMain;
 import io.nebl.core.coins.BitcoreMain;
 import io.nebl.core.coins.NuBitsMain;
-import io.nebl.core.coins.NuSharesMain;
 import io.nebl.core.coins.NxtMain;
 import io.nebl.core.coins.PeercoinMain;
 import io.nebl.core.util.GenericUtils;
@@ -56,7 +55,6 @@ public class CoinURITest {
     final CoinType PPC = PeercoinMain.get();
     final CoinType DASH = DashMain.get();
     final CoinType NBT = NuBitsMain.get();
-    final CoinType NSR = NuSharesMain.get();
     final CoinType NXT = NxtMain.get();
 
 
@@ -155,16 +153,11 @@ public class CoinURITest {
         assertEquals(BTC_TEST, testObject.getType());
         assertEquals(addressTestnet, testObject.getAddress());
 
-        // NuBits and NuShares
+        // NuBits
         BitAddress nuBitAddress = BitAddress.from(NBT, hash160);
         testObject = new CoinURI(NBT.getUriScheme() + ":" + nuBitAddress);
         assertEquals(NBT, testObject.getType());
         assertEquals(nuBitAddress, testObject.getAddress());
-
-        BitAddress nuSharesAddress = BitAddress.from(NSR, hash160);
-        testObject = new CoinURI(NSR.getUriScheme() + ":" + nuSharesAddress);
-        assertEquals(NSR, testObject.getType());
-        assertEquals(nuSharesAddress, testObject.getAddress());
     }
 
     @Test
@@ -584,15 +577,6 @@ public class CoinURITest {
         assertEquals("https://coinomi.com?address=" + goodAddressStr,
                 uri.getAddressRequestUriResponse(goodAddressStr).toString());
 
-        // NuShares
-        goodAddressStr = BitAddress.from(NSR, hash160).toString();
-        uri = new CoinURI("nu:?req-addressrequest=https%3A%2F%2Fcoinomi.com&req-network=nsr.main");
-        assertTrue(uri.isAddressRequest());
-        assertNull(uri.getAddress());
-        assertEquals(NSR, uri.getType());
-        assertEquals("https://coinomi.com", uri.getAddressRequestUri().toString());
-        assertEquals("https://coinomi.com?address=" + goodAddressStr,
-                uri.getAddressRequestUriResponse(goodAddressStr).toString());
     }
 
     @Test(expected = CoinURIParseException.class)

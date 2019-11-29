@@ -1,6 +1,5 @@
 package io.nebl.core.wallet.families.nxt;
 
-import io.nebl.core.coins.BurstMain;
 import io.nebl.core.coins.CoinType;
 import io.nebl.core.coins.FeePolicy;
 import io.nebl.core.coins.NxtMain;
@@ -38,8 +37,6 @@ public class NxtSendRequest extends SendRequest<NxtTransaction> {
         int timestamp;
         if (req.type instanceof NxtMain) {
             timestamp = Convert.toNxtEpochTime(System.currentTimeMillis());
-        } else if (req.type instanceof BurstMain) {
-            timestamp = Convert.toBurstEpochTime(System.currentTimeMillis());
         } else {
             throw new RuntimeException("Unexpected NXT family type: " + req.type.toString());
         }

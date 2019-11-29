@@ -1,10 +1,7 @@
 package io.nebl.core.util;
 
 import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.BlackcoinMain;
 import io.nebl.core.coins.CoinType;
-import io.nebl.core.coins.DigitalcoinMain;
-import io.nebl.core.coins.FeathercoinMain;
 import io.nebl.core.coins.LitecoinMain;
 import io.nebl.core.coins.NuBitsMain;
 import io.nebl.core.coins.PeercoinMain;
@@ -28,7 +25,6 @@ public class GenericUtilsTests {
     @Test
     public void getPossibleTypes() throws AddressMalformedException {
         List<CoinType> types = GenericUtils.getPossibleTypes("BPa5FmbZRGpmNfy4qaUzarXwSSFbJKFRMQ");
-        assertTrue(types.contains(BlackcoinMain.get()));
         assertTrue(types.contains(NuBitsMain.get()));
         assertTrue(GenericUtils.hasMultipleTypes("BPa5FmbZRGpmNfy4qaUzarXwSSFbJKFRMQ"));
 
@@ -36,8 +32,6 @@ public class GenericUtilsTests {
         types = GenericUtils.getPossibleTypes("3Lp1ZbdoDfZF21BLMBpctM6CrM6j4t2JyU");
         assertTrue(types.contains(BitcoinMain.get()));
         assertTrue(types.contains(LitecoinMain.get()));
-        assertTrue(types.contains(FeathercoinMain.get()));
-        assertTrue(types.contains(DigitalcoinMain.get()));
         assertTrue(GenericUtils.hasMultipleTypes("3Lp1ZbdoDfZF21BLMBpctM6CrM6j4t2JyU"));
 
         // Address method
