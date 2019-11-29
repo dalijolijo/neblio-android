@@ -15,7 +15,7 @@ android {
     //buildToolsVersion '28.0.0'
 
     defaultConfig {
-        applicationId "io.nebl.wallet.android"
+        applicationId "io.limx.wallet.android"
         minSdkVersion 10
         targetSdkVersion 28
         versionCode 10

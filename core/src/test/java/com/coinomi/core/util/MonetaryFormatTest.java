@@ -1,4 +1,4 @@
-package io.nebl.core.util;
+package io.limx.core.util;
 
 /*
  * Copyright 2014 Andreas Schildbach
@@ -17,10 +17,10 @@ package io.nebl.core.util;
  * limitations under the License.
  */
 
-import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.FiatValue;
-import io.nebl.core.coins.Value;
-import io.nebl.core.coins.ValueType;
+import io.limx.core.coins.BitcoinMain;
+import io.limx.core.coins.FiatValue;
+import io.limx.core.coins.Value;
+import io.limx.core.coins.ValueType;
 
 import static org.bitcoinj.core.Coin.CENT;
 import static org.bitcoinj.core.Coin.COIN;

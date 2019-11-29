@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="io.nebl.wallet.android.ui.SelectCoinsFragment" >
+    tools:context="io.limx.wallet.android.ui.SelectCoinsFragment" >
 
     <ListView
         android:id="@+id/coins_list"

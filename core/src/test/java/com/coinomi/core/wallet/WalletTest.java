@@ -1,11 +1,11 @@
-package io.nebl.core.wallet;
+package io.limx.core.wallet;
 
-import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.CoinType;
-import io.nebl.core.coins.DogecoinMain;
-import io.nebl.core.coins.DogecoinTest;
-import io.nebl.core.coins.LitecoinMain;
-import io.nebl.core.protos.Protos;
+import io.limx.core.coins.BitcoinMain;
+import io.limx.core.coins.CoinType;
+import io.limx.core.coins.DogecoinMain;
+import io.limx.core.coins.DogecoinTest;
+import io.limx.core.coins.LitecoinMain;
+import io.limx.core.protos.Protos;
 import org.bitcoinj.crypto.KeyCrypter;
 import org.bitcoinj.crypto.KeyCrypterScrypt;
 import org.bitcoinj.crypto.MnemonicException;

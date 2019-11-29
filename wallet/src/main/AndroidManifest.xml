@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.nebl.wallet.android"
+    package="io.limx.wallet.android"
     android:installLocation="internalOnly" >
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -47,14 +47,14 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="io.nebl.wallet.android.WalletApplication"
+        android:name="io.limx.wallet.android.WalletApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="io.nebl.wallet.android.ui.WalletActivity"
+            android:name="io.limx.wallet.android.ui.WalletActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize"
@@ -66,7 +66,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.SendActivity"
+            android:name="io.limx.wallet.android.ui.SendActivity"
             android:label="@string/send_coins_activity_title"
             android:theme="@style/AppTheme" >
             <intent-filter android:label="@string/app_name" >
@@ -77,145 +77,145 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.IntroActivity"
+            android:name="io.limx.wallet.android.ui.IntroActivity"
             android:theme="@style/AppThemeNoTitleBar"
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.PasswordConfirmationActivity"
+            android:name="io.limx.wallet.android.ui.PasswordConfirmationActivity"
             android:theme="@style/AppThemeNoTitleBar"
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.SignTransactionActivity"
+            android:name="io.limx.wallet.android.ui.SignTransactionActivity"
             android:theme="@style/AppThemeNoTitleBar"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.ScanActivity"
+            android:name="io.limx.wallet.android.ui.ScanActivity"
             android:configChanges="orientation|keyboard|keyboardHidden"
             android:screenOrientation="landscape"
             android:stateNotNeeded="true"
             android:theme="@style/AppThemeNoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="io.nebl.wallet.android.ui.AboutActivity"
+            android:name="io.limx.wallet.android.ui.AboutActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.WalletActivity" />
+                android:value="io.limx.wallet.android.ui.WalletActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.AddCoinsActivity"
+            android:name="io.limx.wallet.android.ui.AddCoinsActivity"
             android:label="@string/title_activity_add_coins"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.WalletActivity" />
+                android:value="io.limx.wallet.android.ui.WalletActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.TransactionDetailsActivity"
+            android:name="io.limx.wallet.android.ui.TransactionDetailsActivity"
             android:label="@string/title_activity_transaction_details"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.ExchangeRatesActivity"
+            android:name="io.limx.wallet.android.ui.ExchangeRatesActivity"
             android:label="@string/title_activity_exchange_rates"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.WalletActivity" />
+                android:value="io.limx.wallet.android.ui.WalletActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.PreviousAddressesActivity"
+            android:name="io.limx.wallet.android.ui.PreviousAddressesActivity"
             android:label="@string/title_activity_previous_addresses"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.SettingsActivity"
+            android:name="io.limx.wallet.android.ui.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.WalletActivity" />
+                android:value="io.limx.wallet.android.ui.WalletActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.ShowSeedActivity"
+            android:name="io.limx.wallet.android.ui.ShowSeedActivity"
             android:label="@string/title_activity_show_seed"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.SettingsActivity" />
+                android:value="io.limx.wallet.android.ui.SettingsActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.TradeActivity"
+            android:name="io.limx.wallet.android.ui.TradeActivity"
             android:label="@string/title_activity_trade"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.WalletActivity" />
+                android:value="io.limx.wallet.android.ui.WalletActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.ExchangeHistoryActivity"
+            android:name="io.limx.wallet.android.ui.ExchangeHistoryActivity"
             android:label="@string/title_activity_exchange_history"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.TradeActivity" />
+                android:value="io.limx.wallet.android.ui.TradeActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.TradeStatusActivity"
+            android:name="io.limx.wallet.android.ui.TradeStatusActivity"
             android:label="@string/title_activity_exchange_status"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.SignVerifyMessageActivity"
+            android:name="io.limx.wallet.android.ui.SignVerifyMessageActivity"
             android:label="@string/title_activity_sign_verify_message"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.AccountDetailsActivity"
+            android:name="io.limx.wallet.android.ui.AccountDetailsActivity"
             android:label="@string/title_activity_account_details"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.SweepWalletActivity"
+            android:name="io.limx.wallet.android.ui.SweepWalletActivity"
             android:label="@string/title_activity_sweep_wallet"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.FeesSettingsActivity"
+            android:name="io.limx.wallet.android.ui.FeesSettingsActivity"
             android:label="@string/title_activity_transaction_fees"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.SettingsActivity" />
+                android:value="io.limx.wallet.android.ui.SettingsActivity" />
         </activity>
         <activity
-            android:name="io.nebl.wallet.android.ui.DebuggingActivity"
+            android:name="io.limx.wallet.android.ui.DebuggingActivity"
             android:label="@string/title_activity_debugging"
             android:theme="@style/AppTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="io.nebl.wallet.android.ui.SettingsActivity" />
+                android:value="io.limx.wallet.android.ui.SettingsActivity" />
         </activity>
 
         <provider
-            android:name="io.nebl.wallet.android.ExchangeRatesProvider"
-            android:authorities="io.nebl.wallet.android.exchange_rates"
+            android:name="io.limx.wallet.android.ExchangeRatesProvider"
+            android:authorities="io.limx.wallet.android.exchange_rates"
             android:exported="false" />
         <provider
-            android:name="io.nebl.wallet.android.AddressBookProvider"
-            android:authorities="io.nebl.wallet.android.address_book"
+            android:name="io.limx.wallet.android.AddressBookProvider"
+            android:authorities="io.limx.wallet.android.address_book"
             android:exported="false" />
         <provider
             android:name=".ExchangeHistoryProvider"
-            android:authorities="io.nebl.wallet.android.exchange_history"
+            android:authorities="io.limx.wallet.android.exchange_history"
             android:exported="false" />
 
         <service
-            android:name="io.nebl.wallet.android.service.CoinServiceImpl"
+            android:name="io.limx.wallet.android.service.CoinServiceImpl"
             android:exported="false" />
     </application>
 

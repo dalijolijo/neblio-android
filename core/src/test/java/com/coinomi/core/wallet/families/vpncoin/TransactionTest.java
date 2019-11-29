@@ -1,7 +1,7 @@
-package io.nebl.core.wallet.families.vpncoin;
+package io.limx.core.wallet.families.vpncoin;
 
-import io.nebl.core.coins.VpncoinMain;
-import io.nebl.core.messages.MessageFactory;
+import io.limx.core.coins.VpncoinMain;
+import io.limx.core.messages.MessageFactory;
 import com.google.common.base.Charsets;
 
 import org.bitcoinj.core.Transaction;

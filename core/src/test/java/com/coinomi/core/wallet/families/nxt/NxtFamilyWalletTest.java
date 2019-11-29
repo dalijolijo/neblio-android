@@ -1,19 +1,19 @@
-package io.nebl.core.wallet.families.nxt;
+package io.limx.core.wallet.families.nxt;
 
-import io.nebl.core.coins.CoinType;
-import io.nebl.core.coins.NxtMain;
-import io.nebl.core.coins.Value;
-import io.nebl.core.coins.families.NxtFamily;
-import io.nebl.core.coins.nxt.Account;
-import io.nebl.core.coins.nxt.Attachment;
-import io.nebl.core.coins.nxt.Convert;
-import io.nebl.core.coins.nxt.NxtException;
-import io.nebl.core.coins.nxt.Transaction;
-import io.nebl.core.coins.nxt.TransactionImpl;
-import io.nebl.core.protos.Protos;
-import io.nebl.core.wallet.SendRequest;
-import io.nebl.core.wallet.Wallet;
-import io.nebl.core.wallet.WalletAccount;
+import io.limx.core.coins.CoinType;
+import io.limx.core.coins.NxtMain;
+import io.limx.core.coins.Value;
+import io.limx.core.coins.families.NxtFamily;
+import io.limx.core.coins.nxt.Account;
+import io.limx.core.coins.nxt.Attachment;
+import io.limx.core.coins.nxt.Convert;
+import io.limx.core.coins.nxt.NxtException;
+import io.limx.core.coins.nxt.Transaction;
+import io.limx.core.coins.nxt.TransactionImpl;
+import io.limx.core.protos.Protos;
+import io.limx.core.wallet.SendRequest;
+import io.limx.core.wallet.Wallet;
+import io.limx.core.wallet.WalletAccount;
 
 import org.bitcoinj.crypto.DeterministicHierarchy;
 import org.bitcoinj.crypto.DeterministicKey;

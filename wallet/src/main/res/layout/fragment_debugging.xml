@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context="io.nebl.wallet.android.ui.DebuggingActivity">
+    tools:context="io.limx.wallet.android.ui.DebuggingActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

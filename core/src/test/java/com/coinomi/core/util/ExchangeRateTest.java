@@ -1,4 +1,4 @@
-package io.nebl.core.util;
+package io.limx.core.util;
 
 /*
  * Copyright 2014 Andreas Schildbach
@@ -17,13 +17,13 @@ package io.nebl.core.util;
  * limitations under the License.
  */
 
-import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.CoinType;
-import io.nebl.core.coins.FiatType;
-import io.nebl.core.coins.FiatValue;
-import io.nebl.core.coins.LitecoinMain;
-import io.nebl.core.coins.NuBitsMain;
-import io.nebl.core.coins.Value;
+import io.limx.core.coins.BitcoinMain;
+import io.limx.core.coins.CoinType;
+import io.limx.core.coins.FiatType;
+import io.limx.core.coins.FiatValue;
+import io.limx.core.coins.LitecoinMain;
+import io.limx.core.coins.NuBitsMain;
+import io.limx.core.coins.Value;
 
 import org.junit.Test;
 

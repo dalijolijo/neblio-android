@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Neblio</string>
-    <string name="app_package" translatable="false">io.nebl.wallet.android</string>
+    <string name="app_package" translatable="false">io.limx.wallet.android</string>
     <string name="coinomi_website" translatable="false">https://nebl.io</string>
     <string name="almost_equal_to" translatable="false">≈</string>
     <string name="action_scan_qr_code">Scan</string>

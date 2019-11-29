@@ -1,8 +1,8 @@
-package io.nebl.core.wallet.families.bitcoin;
+package io.limx.core.wallet.families.bitcoin;
 
-import io.nebl.core.coins.CannacoinMain;
-import io.nebl.core.coins.NuBitsMain;
-import io.nebl.core.coins.PeercoinMain;
+import io.limx.core.coins.CannacoinMain;
+import io.limx.core.coins.NuBitsMain;
+import io.limx.core.coins.PeercoinMain;
 
 import org.bitcoinj.core.Transaction;
 import org.junit.Test;

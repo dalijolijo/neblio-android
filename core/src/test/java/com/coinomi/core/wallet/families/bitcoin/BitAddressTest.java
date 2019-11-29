@@ -1,10 +1,10 @@
-package io.nebl.core.wallet.families.bitcoin;
+package io.limx.core.wallet.families.bitcoin;
 
-import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.CoinType;
-import io.nebl.core.coins.LitecoinMain;
-import io.nebl.core.exceptions.AddressMalformedException;
-import io.nebl.core.wallet.AbstractAddress;
+import io.limx.core.coins.BitcoinMain;
+import io.limx.core.coins.CoinType;
+import io.limx.core.coins.LitecoinMain;
+import io.limx.core.exceptions.AddressMalformedException;
+import io.limx.core.wallet.AbstractAddress;
 
 import org.bitcoinj.core.Address;
 import org.bitcoinj.core.AddressFormatException;

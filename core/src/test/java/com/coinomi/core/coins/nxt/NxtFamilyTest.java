@@ -1,13 +1,13 @@
-package io.nebl.core.coins.nxt;
+package io.limx.core.coins.nxt;
 
 /**
  * @author John L. Jegutanis
  */
 
-import io.nebl.core.coins.NxtMain;
-import io.nebl.core.coins.nxt.Appendix.EncryptedMessage;
-import io.nebl.core.wallet.families.nxt.NxtAddress;
-import io.nebl.core.wallet.families.nxt.NxtFamilyKey;
+import io.limx.core.coins.NxtMain;
+import io.limx.core.coins.nxt.Appendix.EncryptedMessage;
+import io.limx.core.wallet.families.nxt.NxtAddress;
+import io.limx.core.wallet.families.nxt.NxtFamilyKey;
 
 import org.bitcoinj.crypto.DeterministicHierarchy;
 import org.bitcoinj.crypto.DeterministicKey;

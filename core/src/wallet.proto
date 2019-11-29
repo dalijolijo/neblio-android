@@ -23,9 +23,9 @@
  * - To regenerate after editing, run: mvn generate-sources -DupdateProtobuf
  */
 
-package io.nebl.core.protos;
+package io.limx.core.protos;
 
-option java_package = "io.nebl.core.protos";
+option java_package = "io.limx.core.protos";
 
 option java_outer_classname = "Protos";
 

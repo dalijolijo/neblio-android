@@ -68,7 +68,7 @@
         android:layout_toEndOf="@id/exchange_status_icons"
         android:layout_below="@id/exchange_status_text"
         android:gravity="center_vertical">
-        <io.nebl.wallet.android.ui.widget.Amount
+        <io.limx.wallet.android.ui.widget.Amount
             android:id="@+id/exchange_deposit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,14 +83,14 @@
             android:text="@string/font_icon_arrow_right"
             tools:text="->"/>
 
-        <io.nebl.wallet.android.ui.widget.Amount
+        <io.limx.wallet.android.ui.widget.Amount
             android:id="@+id/exchange_withdraw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             coinomi:single_line="true" />
     </LinearLayout>
 
-    <io.nebl.wallet.android.ui.widget.AddressView
+    <io.limx.wallet.android.ui.widget.AddressView
         android:id="@+id/withdraw_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

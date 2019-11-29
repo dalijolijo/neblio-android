@@ -1,12 +1,12 @@
-package io.nebl.core.exchange.shapeshift;
+package io.limx.core.exchange.shapeshift;
 
-import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.CoinType;
-import io.nebl.core.coins.DogecoinMain;
-import io.nebl.core.coins.FiatValue;
-import io.nebl.core.coins.NuBitsMain;
-import io.nebl.core.exchange.shapeshift.data.ShapeShiftExchangeRate;
-import io.nebl.core.util.ExchangeRateBase;
+import io.limx.core.coins.BitcoinMain;
+import io.limx.core.coins.CoinType;
+import io.limx.core.coins.DogecoinMain;
+import io.limx.core.coins.FiatValue;
+import io.limx.core.coins.NuBitsMain;
+import io.limx.core.exchange.shapeshift.data.ShapeShiftExchangeRate;
+import io.limx.core.util.ExchangeRateBase;
 
 import org.junit.Test;
 

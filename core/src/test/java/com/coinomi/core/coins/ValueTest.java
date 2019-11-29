@@ -1,4 +1,4 @@
-package io.nebl.core.coins;
+package io.limx.core.coins;
 
 /**
  * Copyright 2014 Andreas Schildbach
@@ -18,9 +18,9 @@ package io.nebl.core.coins;
  */
 
 
-import io.nebl.core.util.GenericUtils;
+import io.limx.core.util.GenericUtils;
 
-import static io.nebl.core.coins.Value.*;
+import static io.limx.core.coins.Value.*;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;

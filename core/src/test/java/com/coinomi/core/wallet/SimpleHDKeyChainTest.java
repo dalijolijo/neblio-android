@@ -1,8 +1,8 @@
-package io.nebl.core.wallet;
+package io.limx.core.wallet;
 
-import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.BitcoinTest;
-import io.nebl.core.protos.Protos;
+import io.limx.core.coins.BitcoinMain;
+import io.limx.core.coins.BitcoinTest;
+import io.limx.core.protos.Protos;
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;

@@ -3,17 +3,17 @@
 
     <Preference android:title="@string/title_activity_transaction_fees" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="io.nebl.wallet.android.ui.FeesSettingsActivity" />
+            android:targetClass="io.limx.wallet.android.ui.FeesSettingsActivity" />
     </Preference>
 
     <Preference android:title="@string/title_activity_show_seed" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="io.nebl.wallet.android.ui.ShowSeedActivity" />
+            android:targetClass="io.limx.wallet.android.ui.ShowSeedActivity" />
     </Preference>
 
     <Preference android:title="@string/pref_title_restore_wallet" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="io.nebl.wallet.android.ui.IntroActivity" />
+            android:targetClass="io.limx.wallet.android.ui.IntroActivity" />
     </Preference>
 
     <CheckBoxPreference
@@ -24,6 +24,6 @@
 
     <Preference android:title="@string/title_activity_debugging" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="io.nebl.wallet.android.ui.DebuggingActivity" />
+            android:targetClass="io.limx.wallet.android.ui.DebuggingActivity" />
     </Preference>
 </PreferenceScreen>

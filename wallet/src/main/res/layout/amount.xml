@@ -15,7 +15,7 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <io.nebl.wallet.android.ui.widget.FontFitTextView
+        <io.limx.wallet.android.ui.widget.FontFitTextView
             android:id="@+id/amount_text"
             style="@style/Amount"
             android:layout_width="wrap_content"

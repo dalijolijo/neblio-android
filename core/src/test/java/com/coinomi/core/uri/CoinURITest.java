@@ -1,4 +1,4 @@
-package io.nebl.core.uri;
+package io.limx.core.uri;
 
 /*
  * Copyright 2012, 2014 the original author or authors.
@@ -18,19 +18,19 @@ package io.nebl.core.uri;
  * 
  */
 
-import io.nebl.core.coins.BitcoinMain;
-import io.nebl.core.coins.BitcoinTest;
-import io.nebl.core.coins.CoinType;
-import io.nebl.core.coins.DashMain;
-import io.nebl.core.coins.DogecoinMain;
-import io.nebl.core.coins.LitecoinMain;
-import io.nebl.core.coins.BitcoreMain;
-import io.nebl.core.coins.NuBitsMain;
-import io.nebl.core.coins.NxtMain;
-import io.nebl.core.coins.PeercoinMain;
-import io.nebl.core.util.GenericUtils;
-import io.nebl.core.wallet.families.bitcoin.BitAddress;
-import io.nebl.core.wallet.families.nxt.NxtAddress;
+import io.limx.core.coins.BitcoinMain;
+import io.limx.core.coins.BitcoinTest;
+import io.limx.core.coins.CoinType;
+import io.limx.core.coins.DashMain;
+import io.limx.core.coins.DogecoinMain;
+import io.limx.core.coins.LitecoinMain;
+import io.limx.core.coins.BitcoreMain;
+import io.limx.core.coins.NuBitsMain;
+import io.limx.core.coins.NxtMain;
+import io.limx.core.coins.PeercoinMain;
+import io.limx.core.util.GenericUtils;
+import io.limx.core.wallet.families.bitcoin.BitAddress;
+import io.limx.core.wallet.families.nxt.NxtAddress;
 
 import org.bitcoinj.core.Coin;
 import org.junit.Test;
@@ -38,7 +38,7 @@ import org.spongycastle.util.encoders.Hex;
 
 import java.io.UnsupportedEncodingException;
 
-import static io.nebl.core.util.BitAddressUtils.getHash160;
+import static io.limx.core.util.BitAddressUtils.getHash160;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
