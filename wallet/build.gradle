@@ -8,11 +8,11 @@ def keystorePropertiesFile = rootProject.file("keystore.properties")
 def keystoreProperties = new Properties()
 
 // Load your keystore.properties file into the keystoreProperties object.
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     compileSdkVersion 23
-    //buildToolsVersion '25.0.0'
+    //buildToolsVersion '28.0.0'
 
     defaultConfig {
         applicationId "io.nebl.wallet.android"

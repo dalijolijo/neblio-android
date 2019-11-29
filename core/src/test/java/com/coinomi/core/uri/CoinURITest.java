@@ -24,6 +24,7 @@ import io.nebl.core.coins.CoinType;
 import io.nebl.core.coins.DashMain;
 import io.nebl.core.coins.DogecoinMain;
 import io.nebl.core.coins.LitecoinMain;
+import io.nebl.core.coins.BitcoreMain;
 import io.nebl.core.coins.NuBitsMain;
 import io.nebl.core.coins.NuSharesMain;
 import io.nebl.core.coins.NxtMain;
@@ -50,6 +51,7 @@ public class CoinURITest {
     final CoinType BTC = BitcoinMain.get();
     final CoinType BTC_TEST = BitcoinTest.get();
     final CoinType LTC = LitecoinMain.get();
+    final CoinType BTX = BitcoreMain.get();
     final CoinType DOGE = DogecoinMain.get();
     final CoinType PPC = PeercoinMain.get();
     final CoinType DASH = DashMain.get();
@@ -107,6 +109,11 @@ public class CoinURITest {
         goodAddress = BitAddress.from(LTC, hash160);
         goodAddressStr = goodAddress.toString();
         assertEquals("litecoin:" + goodAddressStr + "?amount=12.34&label=Hello&message=AMessage", CoinURI.convertToCoinURI(goodAddress, LTC.value("12.34"), "Hello", "AMessage"));
+
+        // Bitcore
+        goodAddress = BitAddress.from(BTX, hash160);
+        goodAddressStr = goodAddress.toString();
+        assertEquals("bitcore:" + goodAddressStr + "?amount=12.34&label=Hello&message=AMessage", CoinURI.convertToCoinURI(goodAddress, BTX.value("12.34"), "Hello", "AMessage"));
 
         // Dogecoin
         goodAddress = BitAddress.from(DOGE, hash160);
@@ -171,6 +178,12 @@ public class CoinURITest {
         goodAddressStr = goodAddress.toString();
         testObject = new CoinURI(LTC, "litecoin:" + goodAddressStr + "?amount=12.34");
         assertEquals("12.34", GenericUtils.formatCoinValue(LTC, testObject.getAmount()));
+
+        // Bitcore
+        goodAddress = BitAddress.from(BTX, hash160);
+        goodAddressStr = goodAddress.toString();
+        testObject = new CoinURI(BTX, "bitcore:" + goodAddressStr + "?amount=12.34");
+        assertEquals("12.34", GenericUtils.formatCoinValue(BTX, testObject.getAmount()));
 
         // Dogecoin
         goodAddress = BitAddress.from(DOGE, hash160);
