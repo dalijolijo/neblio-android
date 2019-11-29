@@ -48,10 +48,11 @@ apt-get install -y openjdk-7-jdk
 update-alternatives --config java
 ```
 
-optional (check "echo $JAVA_HOME")
+optional (check "echo $JAVA_HOME" and $ANDROID_HOME)
 ```sh
 vi /etc/environment
-JAVA_HOME="..."
+JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+ANDROID_HOME=/opt/android-sdk-linux
 source /etc/environment
 ```
 
