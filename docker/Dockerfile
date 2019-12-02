@@ -12,17 +12,13 @@ ENV JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
 # Running updates and installing required packages
 RUN echo '*** Running updates and installing required packages ***' && \
     apt-get update -y && \
-#    apt-get install -y apt-utils \
 apt-get install -y openjdk-8-jdk \
                         curl \
                         git \
-#                        software-properties-common \
                         vim \
                         wget \
                         zip \
                         unzip
-#                        ca-certificates \
-#                        openjdk-8-jdk
 
 # create sdk folder
 RUN mkdir -p $ANDROID_HOME
@@ -64,5 +60,7 @@ RUN export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 && \
     ./gradlew && \
     ./gradlew assembleRelease
 
+RUN echo "Find APK in: /root/neblio-android/wallet/build/outputs/apk/release/wallet-release-unsigned.apk"
+
 ENV TERM linux
-CMD ["/usr/bin/top"]
+CMD ["/bin/bash"]
