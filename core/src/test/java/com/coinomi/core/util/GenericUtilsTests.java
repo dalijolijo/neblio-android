@@ -35,11 +35,11 @@ public class GenericUtilsTests {
         assertTrue(GenericUtils.hasMultipleTypes("3Lp1ZbdoDfZF21BLMBpctM6CrM6j4t2JyU"));
 
         // Address method
-        AbstractAddress address = BlackcoinMain.get().newAddress("BPa5FmbZRGpmNfy4qaUzarXwSSFbJKFRMQ");
-        types = GenericUtils.getPossibleTypes(address);
-        assertTrue(types.contains(BlackcoinMain.get()));
-        assertTrue(types.contains(NuBitsMain.get()));
-        assertTrue(GenericUtils.hasMultipleTypes(address));
+ //       AbstractAddress address = BlackcoinMain.get().newAddress("BPa5FmbZRGpmNfy4qaUzarXwSSFbJKFRMQ");
+ //       types = GenericUtils.getPossibleTypes(address);
+ //       assertTrue(types.contains(BlackcoinMain.get()));
+//        assertTrue(types.contains(NuBitsMain.get()));
+//        assertTrue(GenericUtils.hasMultipleTypes(address));
 
         // Classic Bitcoin addresses should have only one type
         types = GenericUtils.getPossibleTypes("1AjnxP4frz7Nb4v2soLnhN2uV9UocqvaGH");

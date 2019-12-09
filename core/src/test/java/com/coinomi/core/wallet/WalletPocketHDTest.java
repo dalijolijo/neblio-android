@@ -5,7 +5,6 @@ import io.limx.core.coins.CoinType;
 import io.limx.core.coins.DogecoinTest;
 import io.limx.core.coins.NuBitsMain;
 import io.limx.core.coins.Value;
-import io.limx.core.coins.VpncoinMain;
 import io.limx.core.exceptions.AddressMalformedException;
 import io.limx.core.exceptions.Bip44KeyLookAheadExceededException;
 import io.limx.core.exceptions.KeyIsEncryptedException;
@@ -72,7 +71,6 @@ public class WalletPocketHDTest {
     static final CoinType BTC = BitcoinMain.get();
     static final CoinType DOGE = DogecoinTest.get();
     static final CoinType NBT = NuBitsMain.get();
-    static final CoinType VPN = VpncoinMain.get();
     static final List<String> MNEMONIC = ImmutableList.of("citizen", "fever", "scale", "nurse", "brief", "round", "ski", "fiction", "car", "fitness", "pluck", "act");
     static final byte[] AES_KEY_BYTES = {0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3, 4, 5, 6, 7};
     static final long AMOUNT_TO_SEND = 2700000000L;
@@ -386,43 +384,6 @@ public class WalletPocketHDTest {
         tx.addOutput(NBT.oneCoin().toCoin(), account.getReceiveAddress());
         account.addNewTransactionIfNeeded(tx);
         testWalletSerializationForCoin(account);
-    }
-
-    @Test
-    public void serializeTransactionsVpn() throws Exception, Bip44KeyLookAheadExceededException {
-        WalletPocketHD account = new WalletPocketHD(rootKey, VPN, null, null);
-        // Test tx with null extra bytes
-        Transaction tx = new Transaction(VPN);
-        tx.setTime(0x99999999);
-        tx.addOutput(VPN.oneCoin().toCoin(), account.getFreshReceiveAddress());
-        account.addNewTransactionIfNeeded(tx);
-        WalletPocketHD newAccount = testWalletSerializationForCoin(account);
-        Transaction newTx = newAccount.getRawTransaction(tx.getHash());
-        assertNotNull(newTx);
-        assertNotNull(newTx.getExtraBytes());
-        assertEquals(0, newTx.getExtraBytes().length);
-        // Test tx with empty extra bytes
-        tx = new Transaction(VPN);
-        tx.setTime(0x99999999);
-        tx.setExtraBytes(new byte[0]);
-        tx.addOutput(VPN.oneCoin().toCoin(), account.getFreshReceiveAddress());
-        account.addNewTransactionIfNeeded(tx);
-        newAccount = testWalletSerializationForCoin(account);
-        newTx = newAccount.getRawTransaction(tx.getHash());
-        assertNotNull(newTx);
-        assertNotNull(newTx.getExtraBytes());
-        assertEquals(0, newTx.getExtraBytes().length);
-        // Test tx with extra bytes
-        tx = new Transaction(VPN);
-        tx.setTime(0x99999999);
-        byte[] bytes = {0x1, 0x2, 0x3};
-        tx.setExtraBytes(bytes);
-        tx.addOutput(VPN.oneCoin().toCoin(), account.getFreshReceiveAddress());
-        account.addNewTransactionIfNeeded(tx);
-        newAccount = testWalletSerializationForCoin(account);
-        newTx = newAccount.getRawTransaction(tx.getHash());
-        assertNotNull(newTx);
-        assertArrayEquals(bytes, newTx.getExtraBytes());
     }
 
     private WalletPocketHD testWalletSerializationForCoin(WalletPocketHD account) throws UnreadableWalletException {
